@@ -5,8 +5,9 @@ The SSL certificate is generated automatically when starting the container. No a
 
 Every non-HTTPS request is 301-forwarded to its HTTPS equivalent.
 
-By default, the NGINX autoindex is activated. You can disable it by passing `-e AUTOINDEX=0` as an argument of `docker run` when launching the container.
+By default, the NGINX autoindex is activated.
 When trying to serve a folder that doesn't contain an index.php file in it, the default behaviour is then to list the content of the folder. If the autoindex is disabled, an error 403 will be served instead.
+You can disable it by passing `-e AUTOINDEX=0` as an argument of `docker run` when launching the container.
 
 <h3>INSTALLATION</h3>
 
